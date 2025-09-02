@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OpenLKA | Dataset & Related Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="OpenLKA: a large-scale multimodal Lane Keeping Assist (LKA) dataset with related projects LKAnalysis and LKAlert." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+  <!-- Theme CSS (reuse your existing assets) -->
+  <link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css" />
+  <link rel="stylesheet" href="utility/plugins/animate-css/animate.css" />
+  <link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css" />
+  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css" />
+  <link rel="stylesheet" href="utility/css/style.css" />
+
+  <style>
+    .hero-title { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+    .hero-subtitle { font-size: 18px; opacity: .95; }
+    .cta-wrap .btn { margin-right: 10px; margin-top: 10px; }
+    .section-title { margin: 10px 0 24px; font-weight: 700; }
+    .metric { text-align:center; padding:16px 12px; border:1px solid #eee; border-radius:10px; margin-bottom:20px; background:#fff; }
+    .metric h3 { margin:0; font-weight:700; }
+    .metric p { margin:6px 0 0; color:#666; }
+    .thumbnail .caption h4 { font-weight:700; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#f5f5f5; margin-right:6px; font-size:12px; }
+    @media (max-width: 767px) {
+      .hero-title { font-size: 28px; }
+      .hero-subtitle { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body id="body">
+  <!-- Header -->
+  <header class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="padding:6px 0 30px 0;">
+                  <img src="supp/Home/CGL_Logo.jpg" alt="Logo" class="CGLlogo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="primary-nav">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="dataset.html">Dataset</a></li>
+                  <li><a href="lkanalysis.html">LKAnalysis</a></li>
+                  <li><a href="lkalert.html">LKAlert</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li><a href="research.html">Research</a></li>
+                  <li><a href="publication.html">Publications</a></li>
+                  <li><a href="resource.html">Resources</a></li>
+                  <li><a href="joinus.html">Join Us</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1 class="hero-title">OpenLKA: Real-World Lane Keeping Assist</h1>
+            <p class="hero-subtitle">
+              A multimodal dataset for LKA with synchronized <b>CAN</b>, <b>front-view video</b>, and <b>OpenPilot outputs</b> — enabling benchmarking, safety analysis, and infrastructure readiness studies.
+            </p>
+            <div class="cta-wrap">
+              <a class="btn btn-main" href="dataset.html">Explore Dataset</a>
+              <a class="btn btn-default" href="lkanalysis.html">LKA Failure Analysis</a>
+              <a class="btn btn-default" href="lkalert.html">Early-Warning System</a>
+              <a class="btn btn-link" href="publication.html">Publications <span class="ion-arrow-right-b"></span></a>
+            </div>
+            <p style="margin-top:12px;">
+              <span class="pill">Multimodal</span>
+              <span class="pill">Controller-aware</span>
+              <span class="pill">Frame-aligned</span>
+              <span class="pill">Real-world diversity</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="container">
+
+    <!-- One-paragraph intro -->
+    <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top:20px;">
+      <p style="font-size:17px; text-align:justify;">
+        <b>OpenLKA</b> is an open, large-scale dataset focused on real-world Lane Keeping Assist (LKA). It aggregates
+        <b>389.1 hours</b> across <b>62 production vehicle models</b> and <b>52 drivers</b>, synchronizing CAN signals with front-view video and OpenPilot (OP) perception/trajectory outputs.
+        The dataset powers two companion efforts: <b>LKAnalysis</b> for failure-causation analytics and <b>LKAlert</b> for multimodal early-warning.
+      </p>
+    </div>
+
+    <!-- Quick metrics -->
+    <div class="row">
+      <div class="col-sm-3"><div class="metric"><h3>389.1 h</h3><p>Real-world driving</p></div></div>
+      <div class="col-sm-3"><div class="metric"><h3>62</h3><p>Vehicle models</p></div></div>
+      <div class="col-sm-3"><div class="metric"><h3>52</h3><p>Drivers</p></div></div>
+      <div class="col-sm-3"><div class="metric"><h3>CAN + Video + OP</h3><p>Synchronized</p></div></div>
+    </div>
+
+    <!-- Three simple tiles -->
+    <div class="row">
+
+      <!-- Dataset -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/openlka_preview.jpg" alt="OpenLKA Dataset preview">
+          <div class="caption">
+            <h4>OpenLKA Dataset</h4>
+            <p style="text-align:justify;">
+              Multimodal, frame-aligned CAN + video + OP outputs for controller-aware benchmarking and research.
+            </p>
+            <p><a href="dataset.html" class="btn btn-main btn-sm">Dataset Home</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LKAnalysis -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/lkanalysis_dashboard.jpg" alt="LKAnalysis dashboard">
+          <div class="caption">
+            <h4>LKAnalysis</h4>
+            <p style="text-align:justify;">
+              A research site for diagnosing LKA failure modes with route dashboards, event mining, and scenario tagging.
+            </p>
+            <p><a href="lkanalysis.html" class="btn btn-default btn-sm">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LKAlert -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/lkalert_demo.jpg" alt="LKAlert demo">
+          <div class="caption">
+            <h4>LKAlert</h4>
+            <p style="text-align:justify;">
+              A multimodal early-warning system trained on OpenLKA to predict imminent LKA degradation.
+            </p>
+            <p><a href="lkalert.html" class="btn btn-default btn-sm">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlights -->
+    <div class="row">
+      <div class="col-md-12"><h2 class="section-title">Highlights</h2></div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/openlka_preview.jpg" alt="OpenLKA dataset">
+          <div class="caption">
+            <h4>OpenLKA Dataset</h4>
+            <p>
+              Accepted to <b>IEEE ITSC 2025</b>:<br>
+              <i>OpenLKA: An Open Dataset of Lane Keeping Assist from Recent Production Vehicles under Real-World Driving Conditions</i>
+            </p>
+            <p>
+              <a href="https://arxiv.org/abs/2505.09092" target="_blank">Paper&nbsp;<span class="ion-arrow-right-b"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/lkanalysis_dashboard.jpg" alt="LKAnalysis">
+          <div class="caption">
+            <h4>Empirical LKA Evaluation</h4>
+            <p>
+              arXiv preprint 2025:<br>
+              <i>Empirical performance evaluation of lane keeping assist on modern production vehicles</i>
+            </p>
+            <p>
+              <a href="https://arxiv.org/abs/2505.11534" target="_blank">Paper&nbsp;<span class="ion-arrow-right-b"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="thumbnail">
+          <img src="supp/Home/lkalert_demo.jpg" alt="LKAlert">
+          <div class="caption">
+            <h4>Predictive Alerting</h4>
+            <p>
+              arXiv preprint 2025:<br>
+              <i>Bridging human oversight and black-box driver assistance: Vision-language models for predictive alerting in LKA systems</i>
+            </p>
+            <p>
+              <a href="https://arxiv.org/abs/2505.11535" target="_blank">Paper&nbsp;<span class="ion-arrow-right-b"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="news_preview">
+        <h3 class="post-title">News</h3>
+
+        <li>2025/08/30 &nbsp; Our paper <i>OpenLKA</i> accepted to <a href="https://2025.ieee-itsc.org/" target="_blank">IEEE ITSC 2025</a>. Preprint: <a href="https://arxiv.org/abs/2505.09092" target="_blank">arXiv:2505.09092</a>.</li>
+
+        <li>2025/08/28 &nbsp; New preprint released: <i>Empirical performance evaluation of lane keeping assist on modern production vehicles</i>. <a href="https://arxiv.org/abs/2505.11534" target="_blank">arXiv:2505.11534</a>.</li>
+
+        <li>2025/08/28 &nbsp; New preprint released: <i>Bridging human oversight and black-box driver assistance with VLMs</i>. <a href="https://arxiv.org/abs/2505.11535" target="_blank">arXiv:2505.11535</a>.</li>
+
+        <li><a href="news.html" target="_blank">More...</a></li>
+      </div>
+    </div>
+
+
+  </div><!-- /.container -->
+
+  <br><br><br>
+
+  <!-- Scripts -->
+  <script src="utility/js/jquery/jquery-3.4.1.min.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
+  <script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+  <script src="utility/js/jquery/jquery.form.js"></script>
+  <script src="utility/js/jquery/jquery.validate.min.js"></script>
+  <script src="utility/js/script.js"></script>
+  <script src="utility/js/jquery.equalheights.min.js"></script>
+  <script>
+    jQuery(window).on('load', function () { jQuery('.thumbnail').equalHeights(); });
+    jQuery(window).on('resize', function () {
+      clearTimeout(window.__resizeTick);
+      window.__resizeTick = setTimeout(function(){
+        jQuery('.thumbnail').css('height', 'auto').equalHeights();
+      }, 60);
+    });
+  </script>
+</body>
+</html>
